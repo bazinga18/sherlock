@@ -1,0 +1,20 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+t = np.linspace(0,2,20)
+f1= np.exp(8*t)
+f2 = np.sin(3*np.pi*t)
+plt.subplot(221)
+plt.ylim(0,1000)
+plt.title(u'x(t)=3^t')
+plt.plot(t,f1)
+plt.subplot(222)
+plt.title(u'x(t)=cos(t)')
+plt.plot(t,f2)
+plt.subplot(223)
+plt.xlabel(u'x[t]=3^t')
+plt.stem(t,f1)
+plt.subplot(224)
+plt.xlabel(u'x[t]=cos(t)')
+plt.stem(t,f2)
+plt.show()
